@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addItem.css">
+    <script src="./store/globalItemArray.js" defer></script>
+    <script src="./store/addItem.js" type="module"></script>
+    <script src="./store/mainAddItem.js" type="module"></script>
+    
+    <title>Add Item</title>
+</head>
+<body>
+    <nabar>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="./store.html">Go To Store</a>
+            </li>
+            <li class="nav-item">
+                <button class="cart-store">Cart</button>
+            </li>
+        </ul>
+    </nabar>
+
+    <div class="title-opening">
+        <img id="addItemtext" src="./photos/addItemText.png" alt="" srcset="">
+    </div>
+
+
+    <div id="mainDiv">
+        <div class="container-first">
+            <form action="" class="formItem">
+                <label for="" class="firstLab">
+                    <input type="text" placeholder="productId" id="productId"required>
+                </label>
+                <label for="">
+                    <input type="text" placeholder="Name" id="ProductName" required>
+                </label>
+                <label  for="" class="secondLab">
+                    <input type="text" placeholder="Regular Price" id="ProductRegularPrice" required>
+                </label>
+            </form>
+        </div>
+        <div class="container-first">
+            <form action="" class="formItem">
+                <label for="" class="firstLab">
+                    <input type="number" placeholder="Sale Price" id="ProductSalePrice" required>
+                </label>
+                <label for="" >
+                    <input type="text" placeholder="description" id="ProductDesc" required>
+                </label>
+                <select id="categorys" class="secondLab">  
+                    <option selected disabled>choose category</option>            
+                    <option value="Stranger Things">Stranger Things</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="Pokemon">Pokemon</option>
+                </select>
+            </form>
+        </div>
+        <div class="container-butt">
+            <div>
+                <button id="subItem" type="submit">Add Item</button>
+            </div>
+            <div id="addFile">
+                <label for="" >
+                    <h2>add Image</h2>
+                    <input type="file" id="image_input"></input>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

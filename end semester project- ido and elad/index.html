@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/mainUserArray.js" defer></script>
+    <script src="../js/signup.js" defer></script>
+    <script src="../js/formMethods.js" type="module"></script>
+    <script src="../js/formMain.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+  <div class="overlay" id="overlay">
+    <div class="sign-in" id="sign-in">
+      <h1>Welcome Back!</h1>
+      <p>Log in below.</p>
+      <button class="switch-button" id="slide-right-button">Sign In</button>
+    </div>
+    <div class="sign-up" id="sign-up">
+      <h1>Hello, Friend!</h1>
+      <p>Join our community today.</p>
+      <button class="switch-button" id="slide-left-button">Sign Up</button>
+    </div>
+  </div>
+  <div class="form">
+    <div class="sign-in" id="sign-in-info">
+      <h1>Sign In</h1>
+      <p class="small">Sign IN and start the fun!</p>
+      <form id="sign-in-form">      
+        <input type="text" placeholder="User Name" required maxlength="60"/>
+        <input type="password" placeholder="Password" minlength="7" maxlength="14" required/>
+        <button class="control-button in" type="submit">Sign In</button>
+      </form>
+    </div>
+    <div class="sign-up" id="sign-up-info">
+      <h1>Create Account</h1>
+      <p class="small">All inputs are required!</p>
+      <form id="sign-up-form">
+        <input type="text" placeholder="User Name" required maxlength="60"/>
+        <input type="password" placeholder="Password" minlength="7" maxlength="12" required/>
+        <input type="password" placeholder="Confirm Password" minlength="7" maxlength="12" required/>
+        
+        <input type="text" placeholder="First Name" required/>
+        <input type="text" placeholder="Last Name" required/>
+        <input type="email" placeholder="Email" required/>
+        <input type="date" placeholder="BirthDate" min="1900-01-01" max="2022-06-03" required/>
+        <div>
+        <input type="text" list="cities" class="form-control" id="item_pickup" placeholder="City">
+        <datalist id="cities"></datalist>
+        <label for="item_pickup"></label>
+        </div>
+        <input type="text" placeholder="Street" required/>
+        <input type="number" placeholder="Street Number" required/> 
+        <input style="background-color: white;" type="file" id="imgFile" accept="image/jpg, image/jpeg" >
+        <button class="control-button up" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

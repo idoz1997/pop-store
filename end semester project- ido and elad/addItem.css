@@ -1,0 +1,142 @@
+body{
+    background-color:cornsilk;
+}
+
+.nav-list{
+    background: rgb(235, 222, 105);
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    margin: 0px;
+    padding: 1rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.cart-store{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    background-color:lemonchiffon;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.cart-store:hover{
+    background-color: bisque;
+
+}
+
+.nav-item a:hover{
+color:khaki;
+}
+
+.container-first{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.firstLab{
+    margin-right: 50px;
+}
+
+.secondLab{
+    margin-left: 50px;
+}
+
+#categorys{
+    width: 258px;
+    height: 55px;
+}
+
+.title-opening{
+    background-color: aquamarine;
+    margin-top: 1rem;
+    border-radius: 25px;
+}
+
+#addItemtext{
+    padding-top: 100px;
+    padding-left: 325px;
+    padding-bottom: 100px;
+}
+
+input{
+    width: 250px;
+    height: 45px;
+}
+
+.container-butt{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#addFile{
+    border: 3px solid black;
+    margin-left: 82px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;   
+}
+
+
+#mainDiv{
+    margin-top: 15px;
+    background-image: linear-gradient(to left, rgba(228,208,10),rgba(218,165,32));
+    border-radius: 25px;
+}
+
+
+.item-cards{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.border-Card{
+    justify-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    background-color: rgb(231, 243, 254);
+    box-shadow: 1px 4px 4px;
+}
+
+#imgItem{
+    width:150px;
+}
+
+.imgProduct{
+    display: flex;
+    justify-content: center;
+}
+
+.row-flex{
+    display: flex;
+    max-width: fit-content;
+}

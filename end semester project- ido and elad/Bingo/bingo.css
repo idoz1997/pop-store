@@ -1,0 +1,66 @@
+body{
+  background-image: url("./photoBingo/resized-image-Promo.jpeg");
+}
+
+table{
+  width:90%;
+  margin:0 auto;
+  border-collapse: collapse;
+}
+
+
+
+table tr td{
+
+  width:calc(100%/9);
+  border: 15px solid white;
+  height: 80px;
+  text-align: center;
+  font-size: 5em;
+  color: rgb(217, 249, 5);
+  font-weight:bolder;
+}
+
+td{
+  background-color: aquamarine; 
+  opacity: 0.95;
+}
+
+.sizeSelect{
+  border: 10px solid white;
+  text-align: center;
+  color: white;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.numberRaf{
+  font-size:x-large;
+  color: black;
+}
+
+.shuffleDiv{
+  border: 10px solid white;
+  color:white;
+  text-align: center;
+}
+
+.bingoTable{
+  margin-top: 25px
+}
+
+
+.hitTarget{
+  background-color: green;
+}
+
+
+.goToProfile{
+  color: white;
+}
+
+
+

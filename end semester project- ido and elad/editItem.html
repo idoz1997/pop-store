@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editProfilePage.css">
+    <link rel="stylesheet" href="editItem.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="./js/editItems.js" type="module"></script>
+    <script src="./store/globalItemArray.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color:cornsilk;">
+    <div class="container moveCenter" >
+		<div class="main-body moveCenter">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="card">
+						<div class="card-body " >
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">productId</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="" id="editProductId">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Name</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="" id="editName">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Regular Price</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="email" class="form-control" value="" id="editRegularPrice">
+								</div>
+							</div>							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Sale Price</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="" id="editSalePrice">
+								</div>
+							</div>
+              <div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">description</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="" id="editDescription">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-9 text-secondary">
+									<input type="submit" class="btn btn-primary px-4" value="Save Changes">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

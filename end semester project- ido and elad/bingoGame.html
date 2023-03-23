@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Bingo/bingo.css">
+  <script src="./Bingo/bingoJs/mainBingo.js" defer></script>
+  <script src="./Bingo/bingoJs/raffleNumber.js" defer></script>
+  <script src="./Bingo/bingoJs/globalVaribale.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="sizeSelect">
+      <a href="./profilepage.html" class="goToProfile">Go To Profile</a>
+      <form action="">
+        <h1>Enter Board Size</h1>
+        <label for="">
+          <select id="chooseSize">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </label>
+          
+      </form>
+    </div>
+    <div class="shuffleDiv">
+      <form action="">
+        <h1>Click To Lottery Number</h1>
+        <button id="raffleButton" type="button">Raffle</button>
+        <h3 >The number is:</h3>
+        <h3 id="numberRaffle" class="numberRaf"></h3>
+      </form>
+    </div>
+    
+  </div>
+  <div class="bingoTable">
+    <table id="bingoCard">
+
+      <tbody id="tableData"></tbody>
+    </table>
+  </div> 
+</body>
+</html>

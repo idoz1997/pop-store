@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+
+    
+    <!-- Jasmine -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.1.1/jasmine.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.1.1/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.1.1/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.1.1/boot0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.1.1/boot1.min.js"></script>
+    
+    <!-- Global functions file -->
+    
+    <!-- tests -->
+    <script src="../store/mainAddItem.js" defer></script>
+    <script src="../store/addItem.js" type="module"></script>
+    <script  src="../Tests/AddItemToStore.test.js" type="module"></script>
+    
+
+</head>
+
+<body>
+    <main style="display: none;">
+        <div class="additemcard">
+            <h1 class="additemheader">Add item</h1>
+            <form id="additem" action="#" onsubmit="">
+                <div>
+                    <input placeholder=" Item Code" class="input-style" type="text" id="code" required>
+                </div>
+                <div>
+                    <input class="input-style" type="text" placeholder=" Item name" required id="itemnameinput">
+                </div>
+                <div class="big-input">
+                    <label id="itemimagelabel" for="imginput" class="displaynone"> <img id="imageinlabel" alt="">
+                    </label>
+                    <input id="imginput" type="file" placeholder="Item image" accept="image/*" required>
+                </div>
+                <div class="big-input">
+                    <textarea class="input-style" type="text" id="itemdescription" maxlength="60"
+                        placeholder=" Item description" required></textarea>
+                </div>
+                <div>
+                    <input class="input-style" type="number" min="1" step="any" id="Regularprice" value="1.00"
+                        placeholder=" Item price" required>
+                </div>
+                <div>
+                    <input class="input-style" type="number" type="" min="1" step="any" id="saleprice"
+                        placeholder=" sale price">
+                </div>
+                <div>
+                    <select name="" id="" class="input-style" type="text" placeholder=" Item category" required>
+                        <option value="Weapons">Weapons</option>
+                        <option value="Boxing bags">Boxing bags</option>
+                        <option value="Protective equipment">Protective equipment</option>
+                        <option value="Fighting clothes">Fighting clothes</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+
+                </div>
+
+                <button class="pointereventnone" id="btnsbmit" type="submit">Save</button>
+            </form>
+        </div>
+
+
+        <div class="show-itemcard">
+            <h1 id="newproductpreviewheader">new product preview</h2>
+                <div id="item-in-store">
+
+
+
+                </div>
+        </div>
+    </main>
+</body>
+
+</html>

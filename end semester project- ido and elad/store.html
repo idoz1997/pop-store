@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel="stylesheet" href="addItem.css">
+    <script src="./store/goBackToProfileFromStore.js" defer></script>
+    <script src="./store/cartButton.js" defer></script>
+    <script src="./store/globalItemCart.js" defer></script>
+    <script src="./store/reloadItems.js" defer></script>
+    <script src="./store/sortingItems.js" defer></script>
+    <script src="./store/globalItemArray.js" defer></script>
+    <script src="./store/cartOnStore.js" defer></script>
+    
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/games');/*הפונט של המחיר המיוחד*/
+    </style>
+    <title>Store</title>
+</head>
+<body>
+    <nabar>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="">HomePage</a>
+            </li>
+            <li class="nav-item">
+                <button id="showUserOnHomePage" class="returnButton">Hello:</button>
+            </li>
+            <li class="nav-item">
+                <div>
+                    <div>
+                        <button id="buttCart" class="cart-store">Cart</button>
+                    </div>
+                    <div class="numbersShow">
+                        <p id="numberOfitemsInCart" class="roundNumbersCart"></p>
+                    </div>
+                </div>            
+            </li>
+        </ul>
+    </nabar>
+
+    <main >
+        <div class="flexbox-container">
+            <div id="items-offers" class="specialOffer-describe">
+                <h1 id="title-offer">Special Offers</h1>
+                <p class="content-offer">Only at 04/08 </p>
+                <p class="content-offer">
+                    Up to 50 precent 
+                </p>
+                <p class="content-offer">
+                    off for Exclusive Pops !
+                </p>
+
+            </div>
+            <div class="image-popSpecial">
+                <img src="./photos/FUNKO-POP-Dragon-ball-Z-Majin-Vegeta-500x500.png" alt="" srcset="">
+            </div>
+        </div>
+        
+        <div id="chooseSortCategory">
+            <select  id="sortingItems">
+                <option selected disabled>choose Sort</option>  
+                <option id="catchOptions1" value="By Price">By Price</option>          
+                <option id="catchOptions2" value="Stranger Things">Stranger Things</option>
+                <option id="catchOptions3" value="Dragon Ball Z">Dragon Ball Z</option>
+                <option id="catchOptions5" value="Pokemon">Pokemon</option>
+            </select>
+        </div>
+        <div id="containerOfItems" class="container-Items">
+            <img src="" alt="" srcset="">
+        </div>
+
+    </main>
+
+
+</body>
+</html>

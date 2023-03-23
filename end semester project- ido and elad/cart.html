@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="store.css">
+  <script src="./store/dynamicCart.js" defer></script>
+  <script src="./store/globalItemCart.js"></script>
+  <script src="./store/calcSumPrice.js" defer></script>
+  <title>Cart</title>
+</head>
+<body>
+  <nabar>
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="./store.html">HomePage</a>
+        </li>
+        <li class="nav-item">
+            <div>
+                <div>
+                    <button class="cart-store">Cart</button>
+                </div>
+                <div class="numbersShow">
+                    <p id="numberOfitemsInCart" class="roundNumbersCart"></p>
+                </div>
+            </div>            
+        </li>
+    </ul>
+</nabar>
+
+<main>
+  <div class="container-shoppingCart">
+    <div class="cart">
+      <h1>Shopping Cart</h1>
+
+      <table>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">img</th>
+              <th scope="col">Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">description</th>
+              <th scope="col">Price</th>
+              <th scope="col">remove</th>
+            </tr>
+          </thead>
+
+          <tbody id="tableCartItems"></tbody>
+          
+        </table>
+      </table>
+    </div>
+     
+    <div class="subtotal">
+      <h1 id="sumPrice">SubTotal:</h1>
+      <button id="BuyNow">Buy Now</button>
+    </div>
+  </div>
+  
+</main>
+</body>
+</html>
